@@ -1,0 +1,9 @@
+/* css styles in module method*/
+.button{
+    background-color: rgb(58, 245, 245);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
