@@ -1,4 +1,4 @@
-import DigitalClock from "./DigitalClock.jsx";
+import WidthHeightWindow from "./WidthHeightWindow.jsx";
 
 
 
@@ -6,7 +6,7 @@ function App()
 {
     return(
       <>
-        <DigitalClock/>
+        <WidthHeightWindow/>
       </>
     );
   
