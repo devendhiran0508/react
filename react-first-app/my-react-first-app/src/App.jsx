@@ -1,12 +1,10 @@
-import WidthHeightWindow from "./WidthHeightWindow.jsx";
-
-
+import ComponentA from "./ComponentA.jsx";
 
 function App() 
 {
     return(
       <>
-        <WidthHeightWindow/>
+        <ComponentA/>
       </>
     );
   

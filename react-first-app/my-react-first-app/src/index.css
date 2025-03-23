@@ -216,3 +216,11 @@ body{
   text-align: center;
 }
 */
+
+
+/* css for useContext componentA, componentB, componentC, componentD*/
+
+.component-box{
+  border: 2px solid black;
+  padding: 20px;
+}
