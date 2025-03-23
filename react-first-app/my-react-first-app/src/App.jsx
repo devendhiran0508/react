@@ -1,10 +1,11 @@
 import ComponentA from "./ComponentA.jsx";
+import UseRef from "./UseRef.jsx";
 
 function App() 
 {
     return(
       <>
-        <ComponentA/>
+        <UseRef/>
       </>
     );
   
