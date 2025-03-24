@@ -1,11 +1,11 @@
-import ComponentA from "./ComponentA.jsx";
-import UseRef from "./UseRef.jsx";
+import Stopwatch from "./Stopwatch.jsx";
+
 
 function App() 
 {
     return(
       <>
-        <UseRef/>
+        <Stopwatch/>
       </>
     );
   
