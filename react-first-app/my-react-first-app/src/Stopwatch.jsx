@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useSyncExternalStore } from "react";
+import { useState, useEffect, useRef} from "react";
 
 function Stopwatch()
 {
