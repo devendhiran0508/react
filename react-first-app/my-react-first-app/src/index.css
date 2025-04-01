@@ -259,7 +259,7 @@ body{
   margin: 5px;
   min-width: 125px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   color: black;
   transition: background-color 0.2s ease;
   cursor: pointer;
