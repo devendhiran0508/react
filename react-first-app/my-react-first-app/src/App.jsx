@@ -1,11 +1,11 @@
 import Stopwatch from "./Stopwatch.jsx";
-
+import SplineSample from "./splineSample.jsx";
 
 function App() 
 {
     return(
       <>
-        <Stopwatch/>
+        <SplineSample/>
       </>
     );
   
