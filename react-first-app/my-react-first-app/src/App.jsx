@@ -1,11 +1,12 @@
-import SplineCalculator from "./SplineCalculator.jsx";
+import LoginPage from "./LoginPage.jsx";
+
 
 
 function App() 
 {
     return(
       <>
-        <SplineCalculator/>
+        <LoginPage/>
       </>
     );
   

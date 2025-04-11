@@ -228,7 +228,7 @@ body{
 */
 
 
-/* css for stopwatch*/
+/* css for stopwatch
 
 body{
   display: flex;
@@ -282,4 +282,20 @@ body{
 }
 .resetbutton:hover{
   background-color: rgb(46, 153, 153);
+}
+  */
+
+/*css for login page for full stack project*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
