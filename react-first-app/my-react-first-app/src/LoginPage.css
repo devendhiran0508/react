@@ -1,121 +1,107 @@
-/*
-Background and Layout 
-.background {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to bottom, #2d3748, #1a202c);
-    overflow: hidden;
-  }
-  
-  Cursor Follow Element 
-  .cursor-follow {
-    position: absolute;
-    pointer-events: none;
-    animation: spin 2s linear infinite;
-  }
-  
-   Spin Animation 
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  Form Container 
-  .form-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-  }
-  
-  .form-box {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .form-box h1 {
-    margin-bottom: 20px;
-  }
-  
-   Input Box 
-  .input-box {
-    margin-bottom: 15px;
-    position: relative;
-  }
-  
-  .input-box .icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: #00bfff;
-  }
-  
-  .input-box input {
-    width: 100%;
-    padding: 10px 10px 10px 35px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    font-size: 14px;
-    background: #333;
-    color: white;
-  }
-  
-   Remember Me and Forgot Password 
-  .rem-for {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-  }
-  
-  .rem-for a {
-    color: #00bfff;
-    text-decoration: none;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: #00bfff;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #009acd;
-  }
-  
-  Register Link 
-  .form-box p {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  
-  .form-box a {
-    color: #00bfff;
-    text-decoration: none;
-  }
-  
-  .form-box a:hover {
-    text-decoration: underline;
-  }
-  
-*/
+body{
+  margin: 0;
+  overflow: hidden ;
+}
+.form-box{
+  background: linear-gradient(to bottom, rgb(73, 229, 216),rgb(202, 29, 159));
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px #00000033;
+  text-align: center;
+  min-height: 50vh;
+  max-height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.form-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+}
+.input-box {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
 
+.input-box:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.input-box .icon {
+  font-size: 1.5rem;
+}
+
+.user-input {
+  flex: 1;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.rem-for{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 0.9rem;  
+}
+.rem-for a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.rem-for a:hover {
+  color: #fff;
+}
+
+.rem-for label {
+  display: flex;
+  align-items: center;
+}
+
+.rem-for input {
+  margin-right: 5px;
+}
+button{
+  background: linear-gradient(135deg, #d32626, #c8fc2e);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s;
+}
+button:hover {
+  background: linear-gradient(135deg, #c8fc2e, #d32626);
+  transform: scale(1.05);
+}
+.form-box p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.form-box p a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  margin-left: 5px;
+}
+
+.form-box p a:hover {
+  color: #8ece0e;
+}
 @keyframes spin {
     from {
       transform: rotate(0deg);
@@ -129,5 +115,9 @@ Background and Layout
     position: absolute;
     pointer-events: none;
     animation: spin 2s linear infinite;
+  }
+  .plane{
+    size: 30;
+    color: black;
   }
   
