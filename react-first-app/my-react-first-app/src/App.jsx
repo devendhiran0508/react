@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import ExpenseForm from "./ExpenseForm.jsx";
 import BudgetTracker from "./BudgetTracker.jsx";
 import ExpenseList from "./ExpenseList.jsx";
+import './ExpenseTracker.css';
+
 
 
 

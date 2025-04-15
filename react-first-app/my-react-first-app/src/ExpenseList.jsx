@@ -1,4 +1,6 @@
 import React, { useState, useSyncExternalStore } from "react";
+import './ExpenseTracker.css';
+
 
 
 const ExpenseList=({expenses,onRemove,onEdit})=>{
@@ -49,8 +51,8 @@ const ExpenseList=({expenses,onRemove,onEdit})=>{
               <p>Category: {ex.category}</p>
               <p>Place: {ex.place}</p>
               <p>Date: {new Date(ex.date).toLocaleDateString()}</p>
-              <button onClick={() => startEdit(ex)}>Edit</button>
-              <button onClick={() => onRemove(ex.id)}>Remove</button>
+              <button className="edit-btn" onClick={() => startEdit(ex)}>Edit</button>
+              <button className="cancel-btn" onClick={() => onRemove(ex.id)}>Remove</button>
             </div>
         )))}
     </div>

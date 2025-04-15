@@ -1,4 +1,6 @@
 import React from 'react';
+import './ExpenseTracker.css';
+
 
 const BudgetTracker=({expenses,budget,setBudget})=>{
     const total=expenses.reduce((sum,expense)=>sum+expense.amount,0);
