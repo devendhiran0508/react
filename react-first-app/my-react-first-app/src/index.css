@@ -283,6 +283,7 @@ body{
 .resetbutton:hover{
   background-color: rgb(46, 153, 153);
 }
+  linear-gradient(to right, #6a11cb, #2575fc);
   */
 
 /*css for login page for full stack project*/

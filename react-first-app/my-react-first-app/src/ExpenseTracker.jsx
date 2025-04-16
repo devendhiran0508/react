@@ -7,7 +7,7 @@ import './ExpenseTracker.css';
 
 
 
-function App() 
+function ExpenseTracker() 
 {
   const [expenses,setExpenses]=useState([]);
   const [budget,setBudget]=useState(1000);
@@ -30,12 +30,18 @@ function App()
     return(
       <>
         <h1>Expense Tracker</h1>
-        <ExpenseForm onAddExpense={addExpense}/>
-        <ExpenseList expenses={expenses} onRemove={removeExpense} onEdit={editExpense}/>
-        <BudgetTracker expenses={expenses} budget={budget} setBudget={setBudget}/>
+        <div className="container">
+          <div className="left-section">
+            <ExpenseForm onAddExpense={addExpense}/>
+            <BudgetTracker expenses={expenses} budget={budget} setBudget={setBudget}/>
+          </div> 
+          <div className="right-section">
+            <ExpenseList expenses={expenses} onRemove={removeExpense} onEdit={editExpense}/>
+          </div>
+        </div>
       </>
     );
   
 }
 
-export default App
+export default ExpenseTracker
