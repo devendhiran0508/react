@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './StoryGenerator.css';
 
 function StoryGenerator() {
   const [genre, setGenre] = useState("mystery");
