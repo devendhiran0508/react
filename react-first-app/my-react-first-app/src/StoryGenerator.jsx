@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './StoryGenerator.css';
 
 function StoryGenerator() {
-  const [genre, setGenre] = useState("mystery");
+  const [genre, setGenre] = useState("thriller");
   const [keywords, setKeywords] = useState("");
   const [episodic, setEpisodic] = useState(false);
   const [story, setStory] = useState("");
