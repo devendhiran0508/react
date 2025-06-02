@@ -7,15 +7,26 @@ function StoryGenerator() {
   const [episodic, setEpisodic] = useState(false);
   const [story, setStory] = useState("");
 
-  const handleGenerate = async () => {
+const handleGenerate = async () => {
+  try {
     const response = await fetch("http://localhost:8000/generate-story", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ genre, keywords: keywords.split(","), episodic }),
     });
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch story.");
+    }
+
     const data = await response.json();
     setStory(data.story);
-  };
+  } catch (error) {
+    console.error("Error:", error);
+    setStory("Failed to generate story.");
+  }
+};
+
 
   return (
     <div>

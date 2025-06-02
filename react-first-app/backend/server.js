@@ -3,7 +3,7 @@ require('dotenv').config(); // <-- add this at the very top
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const { OpenAIApi, Configuration } = require("openai");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const app = express();
 const PORT = 8000;
@@ -11,9 +11,7 @@ const PORT = 8000;
 app.use(cors());
 app.use(bodyParser.json());
 
-const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY, // <-- use environment variable
-});
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 app.post("/generate-story", async (req, res) => {
   const { genre, keywords, episodic } = req.body;
