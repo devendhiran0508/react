@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "@splinetool/runtime": "^1.9.82"
+    "@splinetool/runtime": "^1.9.82",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "openai": "^5.0.1"
   }
 }
