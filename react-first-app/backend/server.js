@@ -1,24 +1,21 @@
-// Import necessary modules
+require('dotenv').config(); // <-- add this at the very top
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const { OpenAIApi, Configuration } = require("openai");
 
-// Initialize the app
 const app = express();
 const PORT = 8000;
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
-// OpenAI API configuration
 const configuration = new Configuration({
-  apiKey: "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", // Replace with your OpenAI API key
+  apiKey: process.env.OPENAI_API_KEY, // <-- use environment variable
 });
 const openai = new OpenAIApi(configuration);
 
-// Endpoint to generate a story
 app.post("/generate-story", async (req, res) => {
   const { genre, keywords, episodic } = req.body;
 
@@ -44,7 +41,6 @@ app.post("/generate-story", async (req, res) => {
   }
 });
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
