@@ -14,7 +14,6 @@ app.use(bodyParser.json());
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY, // <-- use environment variable
 });
-const openai = new OpenAIApi(configuration);
 
 app.post("/generate-story", async (req, res) => {
   const { genre, keywords, episodic } = req.body;
